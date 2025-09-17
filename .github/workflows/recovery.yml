@@ -47,8 +47,8 @@ jobs:
         md5sum -t fastbootd-recovery.tar >> fastbootd-recovery.tar
         mv fastbootd-recovery.tar fastbootd-recovery.tar.md5
 
-    - name: Upload Recovery
-      uses: actions/upload-artifact@v3.0.0
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
       with:
         path: /home/runner/work/Patch-Recovery/Patch-Recovery/output/*.md5
         name: Patched-Recovery
